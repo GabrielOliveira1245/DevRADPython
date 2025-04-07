@@ -1,0 +1,55 @@
+Considerando algumas formas de trabalhar com arquivos, tais como:
+
+```
+print('> READ/Leitura')
+with open('arquivo.txt', 'r') as arquivo:
+  dados = arquivo.read()
+print(dados)
+
+#print('> WRITE/Escrita')
+with open('arquivo.txt', 'w') as arquivo:
+  arquivo.write('Apagou dados do arquivo')
+
+print('> APPEND/Acrescentar')
+with open('arquivo.txt', 'a') as arquivo:
+  arquivo.write('\nSegunda linha do arquivo')
+
+print('> READ/Leitura')
+with open('arquivo.txt', 'r') as arquivo:
+  dados = arquivo.read()
+print(dados)
+```
+Crie um programa com o seguinte menu:
+
+1. Criar um arquivo
+2. Acrescentar linhas ao arquivo
+3. Mostrar o conteudo do arquivo
+0. Sair
+
+Onde na opcao 1, o usuario pode informar um nome de arquivo.
+Caso não seja informado, considere 'arquivo.txt' como nome inicial
+para as demais funcionalidades do programa.
+
+Opcao: 1
+Informe o nome do arquivo: [arquivo.txt]
+
+A opcao de insercao de dados deve permitir o acrescimo de quantas
+linhas o usuario desejar ate' encontrar uma condicao de parada, 
+como somente o numero zero, por exemplo.
+
+Opcao: 2
+> Segunda linha
+> TERCEIRA LINHA
+> QuArTa linha
+> 0
+
+Apos o recebimento de cada linha, tratar a informacao para que o
+texto armazenado seja uma linha com todo o conteudo em caixa baixa
+tendo apenas a letra inicial da frase em maiusculo
+
+A opcao de leitura mostrara' o conteudo do arquivo
+
+Opcao: 3
+Esta eh a primeira linhas
+
+Opcao: _
