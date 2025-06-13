@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Perfil{% endblock %}
+{% block content %}
+<div class="card">
+    <h2>PERFIL DO USUÁRIO</h2>
+    
+    {# Exibe os dados dinâmicos do perfil do usuário #}
+    <p><strong>Nome:</strong> {{ perfil.nome or 'Não informado' }}</p>
+    <p><strong>Contato:</strong> {{ perfil.contato or 'Não informado' }}</p>
+    <p><strong>Foto:</strong> <em>em breve...</em></p>
+    
+    {# Futuramente, um link para editar o perfil pode ser adicionado aqui #}
+    </div>
+{% endblock %}
